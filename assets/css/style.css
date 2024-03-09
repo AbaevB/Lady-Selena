@@ -1,1 +1,7 @@
- 
+ img  {
+  max-width: 100%;
+ }
+
+ .bg-black  {
+  background-color: #000;
+ }
