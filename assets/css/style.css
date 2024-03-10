@@ -1,7 +1,116 @@
- img  {
-  max-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+ @font-face {
+   font-family: 'miama_nuevamedium';
+   src: url('../fonts/miama_nueva-webfont.woff2') format('woff2'),
+    url('../fonts/miama_nueva-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
  }
 
- .bg-black  {
-  background-color: #000;
+ .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+ .descr {
+  font-style: italic;
+ }
+
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+
+.hero-title {
+  margin-bottom: 50px;
+  font-family: 'miama_nuevamedium';
+  font-size: 8rem;
+  color: #fff;
+}
+
+.hero__subtitle{
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  color: blanchedalmond;
+}
+
+.hero__text {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.title  {
+  font-family: "Noto Serif Display", serif;
+  color: #8a5142;
+}
+
+.section-title  {
+  margin-bottom: 30px;
+  font-size: 3rem;
+
+}
+
+ img {
+   max-width: 100%;
+ }
+
+ .bg-black {
+   background-color: #000;
+ }
+
+ .list-reset {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ .btn{
+  text-transform: uppercase;
+ }
+
+ .section {
+   padding-top: 90px;
+ }
+
+
+
+
+ /*.header__btn {
+  color: #fff !important;
+ }*/
+
+ .about {
+  background-image: url('../img/section-bg-light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+ .about-list__item {
+  color:  #8a5142;
+ }
+
+ .about-list__item:not(:last-child) {
+  margin-bottom: 25px;
+ }
+
+ .about-list__text{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #212529 ;
+ }
+
+ @media (max-width: 992px)  {
+  .hero-title{
+    margin-bottom: 30px;
+    font-size: 5rem;
+  }
  }
