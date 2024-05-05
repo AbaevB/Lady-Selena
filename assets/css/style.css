@@ -9,6 +9,25 @@
   font-style: normal;
 }
 
+img {
+  max-width: 100%;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+
 :root {
   --body-color: #3b3937;
   --button-color: #926341;
@@ -42,6 +61,17 @@ body {
   padding-bottom: 90px;
 }
 
+.title {
+  font-family: "Noto Serif Display", serif;
+  color: #8a5142;
+}
+
+.section__title {
+  font-family: 'miama_nuevamedium';
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
 .descr {
   font-style: italic;
 }
@@ -63,6 +93,8 @@ body {
   background-color: #926341;
   border-color: #926341;
 }
+
+/*--------------------header--------------------*/
 
 /*--------------------hero--------------------*/
 .hero {
@@ -95,50 +127,25 @@ body {
   font-size: 1rem;
 }
 
-.title {
-  font-family: "Noto Serif Display", serif;
-  color: #8a5142;
-}
-
-.section__title {
-  font-family: 'miama_nuevamedium';
-  margin-bottom: 30px;
-  font-size: 3rem;
-
-}
-
-img {
-  max-width: 100%;
-}
-
-.bg-black {
-  background-color: #000;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.btn {
-  text-transform: uppercase;
-}
+/*--------------------about--------------------*/
 
 
-
-
-
-
-/*.header__btn {
-  color: #fff !important;
- }*/
 
 .about {
   background-image: url('../img/section-bg-light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.about__image  {
+  margin-bottom: 30px;
+}
+
+
+/*--------------------showcase--------------------*/
+.showcase {
+
 }
 
 .choice {
