@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>Lady Selena</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -42,7 +43,7 @@
           </li>
         </ul>
 
-        <button class="btn header__btn btn-outline-light btn-lg ">Каталог</button>
+        <button class="btn header__btn outline-btn btn-lg ">Каталог</button>
 
       </div>
     </nav>
@@ -60,24 +61,27 @@
           <p class="text hero__text">
             Приглашает к сотрудничеству поставщиков, дизайнеров и художников
           </p>
-          <button href="#" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true">
+          <a href="opportunity.html" class="btn outline-btn btn-lg" role="button" aria-pressed="true">
             подробнее
-          </button>
+          </a>
 
         </div>
       </div>
     </section>
     <section id="about" class="section about">
       <div class="container">
-        <h2 class="title section-title about__title">
-          О нас
-        </h2>
+
         <div class="row">
           <div class="col-12">
+            <div class="section__header d-flex justify-content-center">
+              <h2 class="title section__title about__title">
+                О нас
+              </h2>
+            </div>
             <img src="assets/img/about-pic.jpeg" alt="Интерьер" class="about-image">
           </div>
           <div class="section-item about__item">
-            <h3 class="title article__title">
+            <h3 class="title section-item__title">
               Наша миссия
             </h3>
             <p class="text article__text">
@@ -101,7 +105,7 @@
           </div>
 
           <div class="section-item about__item">
-            <h3 class="title article__title">
+            <h3 class="title section-item__title">
               Наша команда
             </h3>
             <p class="descr article__descr">
@@ -366,7 +370,7 @@
 
         </div>
         <div class="section-item about__item ">
-          <h3 class="title article__title">
+          <h3 class="title section-item__title">
             Наши принципы:
           </h3>
           <div class="d-flex justify-content-center">
@@ -404,7 +408,7 @@
     </section>
     <section id="showcase" class="section showcase">
       <div class="container">
-        <h2 class="title section-title showcase__title">
+        <h2 class="title section__title showcase__title">
           Витрина товаров
         </h2>
         <div class="row">
@@ -1388,7 +1392,7 @@
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="choice__content">
-              <h2 class="title section-title choice__title">
+              <h2 class="title section__title choice__title">
                 Нужна помощь с выбором?
               </h2>
               <p class="text choice__text">
@@ -1430,7 +1434,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-12">
-            <h2 class="title section-title blog__title">
+            <h2 class="title section__title blog__title">
               Новые статьи
             </h2>
           </div>
@@ -1626,7 +1630,7 @@
     </section>
     <section id="contacts" class="section contacts">
       <div class="container">
-        <h2 class="title section-title contacts__title">
+        <h2 class="title section__title contacts__title">
           Контакты
         </h2>
         <div class="row">
