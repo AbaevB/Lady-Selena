@@ -8,10 +8,12 @@
   <title>Lady Selena</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -126,15 +128,15 @@
               </h3>
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card team__card">
+                  <div class="card team-card">
                     <div class="card-header">
-                      <img src="assets/img/user_1.jpg" alt="" class="member-pic rounded-circle">
+                      <img src="assets/img/user_1.jpg" alt="Елена Кузьмина" class="member-pic rounded-circle">
                     </div>
                     <div class="card-body">
-                      <h4 class="title card-title">
+                      <h4 class="title card-title team-card__title">
                         Елена Кузьмина
                       </h4>
-                      <span class="card__subtitle">
+                      <span class="team-card__subtitle">
                         Директор
                       </span>
                       <p class="text card__text">
@@ -185,15 +187,15 @@
 
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card team__card">
+                  <div class="card team-card">
                     <div class="card-header">
                       <img src="assets/img/user_2.jpg" alt="" class="member-pic rounded-circle">
                     </div>
                     <div class="card-body">
-                      <h4 class="title card-title">
+                      <h4 class="title card-title team-card__title">
                         Дмитрий Васильев
                       </h4>
-                      <span class="card__subtitle">
+                      <span class="team-card__subtitle">
                         Дизайнер
                       </span>
                       <p class="text card__text">
@@ -243,15 +245,15 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card team__card">
+                  <div class="card team-card">
                     <div class="card-header">
                       <img src="assets/img/user_3.jpg" alt="" class="member-pic rounded-circle">
                     </div>
                     <div class="card-body">
-                      <h4 class="title card-title">
+                      <h4 class="title card-title team-card__title">
                         Татьяна Смирнова
                       </h4>
-                      <span class="card__subtitle">
+                      <span class="team-card__subtitle">
                         Консультант
                       </span>
                       <p class="text card__text">
@@ -302,15 +304,15 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card team__card">
+                  <div class="card team-card">
                     <div class="card-header">
                       <img src="assets/img/user_4.jpg" alt="" class="member-pic rounded-circle">
                     </div>
                     <div class="card-body">
-                      <h4 class="title card-title">
+                      <h4 class="title card-title team-card__title">
                         Михаил Лазарев
                       </h4>
-                      <span class="card__subtitle">
+                      <span class="team-card__subtitle">
                         Менеджер по производству
                       </span>
                       <p class="text card__text">
@@ -380,7 +382,15 @@
                   <div class="col-lg-8 col-md-6 col-sm-12">
                     <div class="principle__right">
                       <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat atque odio quos doloremque minus facilis ipsam! Velit laudantium, aut aspernatur magnam delectus excepturi quod minus debitis, ipsam temporibus aliquid modi optio, nam quia iure. Recusandae, rerum consectetur soluta doloribus ratione molestiae aspernatur sequi repudiandae! Sapiente unde cupiditate nulla iste, corrupti, temporibus totam, explicabo laudantium incidunt molestias provident aliquid? Illo consectetur, nisi voluptas doloremque suscipit odio, numquam asperiores dolorum rem vitae recusandae nobis ullam nulla beatae. Officia iste impedit nam nisi placeat culpa natus vel quis animi ullam nostrum quod assumenda sapiente, voluptatibus est libero dicta perspiciatis in possimus dolor quaerat!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat atque odio quos doloremque
+                        minus facilis ipsam! Velit laudantium, aut aspernatur magnam delectus excepturi quod minus
+                        debitis, ipsam temporibus aliquid modi optio, nam quia iure. Recusandae, rerum consectetur
+                        soluta doloribus ratione molestiae aspernatur sequi repudiandae! Sapiente unde cupiditate nulla
+                        iste, corrupti, temporibus totam, explicabo laudantium incidunt molestias provident aliquid?
+                        Illo consectetur, nisi voluptas doloremque suscipit odio, numquam asperiores dolorum rem vitae
+                        recusandae nobis ullam nulla beatae. Officia iste impedit nam nisi placeat culpa natus vel quis
+                        animi ullam nostrum quod assumenda sapiente, voluptatibus est libero dicta perspiciatis in
+                        possimus dolor quaerat!
                       </p>
                     </div>
                   </div>
@@ -542,10 +552,10 @@
               </li>
             </ul>
           </div>
-          <div class="tab-content" id="pills-tabContent">
+          <div class="tab-content showcase__tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -566,7 +576,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -586,7 +596,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -606,7 +616,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -626,7 +636,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -646,7 +656,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -666,7 +676,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -686,7 +696,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -706,7 +716,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -730,7 +740,7 @@
             </div>
             <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -751,7 +761,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -771,7 +781,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -791,7 +801,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -811,7 +821,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -831,7 +841,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -851,7 +861,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -871,7 +881,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -891,7 +901,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -915,7 +925,7 @@
             </div>
             <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -936,7 +946,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -956,7 +966,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -976,7 +986,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -996,7 +1006,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1016,7 +1026,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1036,7 +1046,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1056,7 +1066,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1076,7 +1086,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1100,7 +1110,7 @@
             </div>
             <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1121,7 +1131,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1141,7 +1151,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1161,7 +1171,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1181,7 +1191,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1201,7 +1211,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1221,7 +1231,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1241,7 +1251,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1261,7 +1271,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header product-card__header">
                       <span class="product-name d-block">
@@ -1285,7 +1295,7 @@
             </div>
             <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1306,7 +1316,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1326,7 +1336,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1346,7 +1356,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1366,7 +1376,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1386,7 +1396,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1406,7 +1416,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1426,7 +1436,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1446,7 +1456,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="tab-pane__item col-lg-4 col-md-6 col-sm-12">
                   <div class="card product-card">
                     <div class="card-header ">
                       <span class="product-name d-block">
@@ -1493,7 +1503,8 @@
               <p class="text choice__text">
                 Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!
               </p>
-              <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="choice__form">
+              <form id="supportForm" action="https://jsonplaceholder.typicode.com/posts" method="post"
+                class="choice__form">
                 <div class="form-row">
                   <div class="form-group col-lg-6 col-md-12">
                     <label for="inputName">Имя</label>
@@ -1779,8 +1790,7 @@
             <div class="contacts__map">
               <iframe id="map_94934015" frameborder="0" width="100%" height="800px"
                 sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
-              <script
-                type="text/javascript">(function (e, t) { var r = document.getElementById(e); r.contentWindow.document.open(), r.contentWindow.document.write(atob(t)), r.contentWindow.document.close() })("map_94934015", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2ZmMDAwMCIsInRpdGxlIjoiVEdGa2VTQlRaV3hsYm1FPSIsImRlc2NyaXB0aW9uIjoiUEhBKzBKelF0ZEN4MExYUXU5R01JTkM5MExBZzBMZlFzTkM2MExEUXR6d3ZjRDQ9IiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls4NC44OTM2NzgsNTYuNDkzMjE1XX0sImlkIjo4MDB9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2ZmMDAwMCIsInRpdGxlIjoiVEdGa2VTQlRaV3hsYm1FPSIsImRlc2NyaXB0aW9uIjoiUEhBKzBKVFF0ZEdBMExYUXN0R1AwTDNRdmRDdzBZOGcwTHpRdGRDeDBMWFF1OUdNSU5DNElOQzQwTDNSZ3RDMTBZRFJqTkMxMFlEUXZkR0wwTGtnMExUUXVOQzMwTERRdWRDOUlOQzkwTEFnMExmUXNOQzYwTERRdHp3dmNEND0iLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wzg0Ljg5MzY3OCw1Ni40OTMyMTVdfSwiaWQiOjExMjl9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo1Ni40OTAzMTU4MTEwNjMxMiwibG9uIjo4NC44ODUwNDg4NjYyNzE5OSwiem9vbSI6MTR9LCJpc1doZWVsWm9vbUVuYWJsZWQiOnRydWV9Jyk8L3NjcmlwdD48c2NyaXB0IGFzeW5jPSIiIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPVVBLTE1ODg2NjE2OC0xIj48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+KGZ1bmN0aW9uKGUpe2Z1bmN0aW9uIHQoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpfXdpbmRvdy5kYXRhTGF5ZXI9d2luZG93LmRhdGFMYXllcnx8W10sdCgianMiLG5ldyBEYXRlKSx0KCJjb25maWciLGUpLHdpbmRvdy5ndGFnPXR9KSgnVUEtMTU4ODY2MTY4LTEnKTwvc2NyaXB0PjwvYm9keT4=")</script>
+              <script src="assets/js/map.js"></script>
             </div>
           </div>
           <div class="col-12">
@@ -1808,21 +1818,21 @@
                           placeholder="Как вас зовут?">
                       </div>
                       <div class="form-group col-lg-4 col-md-6 col-sm-12">
-                        <label for="inputContactsPhone">
+                        <label class="hidden" for="inputContactsPhone">
                           Телефон
                         </label>
                         <input type="tel" class="form-control" required name="contactsTel" id="inputContactsPhone"
                           placeholder="Ваш телефон">
                       </div>
                       <div class="form-group col-lg-4 col-md-6 col-sm-12">
-                        <label for="inputCntactsEmail">
+                        <label class="hidden" for="inputCntactsEmail">
                           Почта
                         </label>
                         <input type="email" class="form-control" required name="contactsEmail" id="inputContactsEmail"
                           placeholder="Ваша почта">
                       </div>
                       <div class="form-group col-12">
-                        <label for="textareaContacts">Сообщение</label>
+                        <label class="hidden" for="textareaContacts">Сообщение</label>
                         <textarea class="form-control" required name="message" id="textareaContacts" cols="30" rows="10"
                           placeholder="Задайте ваш вопрос"></textarea>
                       </div>
@@ -1974,6 +1984,7 @@
         </div>
       </div>
     </div>
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
