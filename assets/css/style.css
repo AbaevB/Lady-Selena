@@ -1,116 +1,288 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
- @font-face {
-   font-family: 'miama_nuevamedium';
-   src: url('../fonts/miama_nueva-webfont.woff2') format('woff2'),
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'miama_nuevamedium';
+  src: url('../fonts/miama_nueva-webfont.woff2') format('woff2'),
     url('../fonts/miama_nueva-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
- }
+  font-weight: normal;
+  font-style: normal;
+}
 
- .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
- }
+img {
+  max-width: 100%;
+}
 
- .descr {
+.bg-black {
+  background-color: #000;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+
+:root {
+  --body-color: #3b3937;
+  --button-color: #926341;
+  --accent-color: #a9845c;
+  --second-accent-color: #ffd6a8;
+  --gray-color: #b1b0af;
+  --second-gray-color:  #dadada;
+  --third-gray-color: #f3f0ee;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--body-color);
+  background-color: var(--white-color);
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.title {
+  font-family: "Noto Serif Display", serif;
+  color: #8a5142;
+}
+
+.section__title {
+  font-family: 'miama_nuevamedium';
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.descr {
   font-style: italic;
- }
+}
 
 
+.outline-btn  {
+  color: var(--second-accent-color) ;
+  background-color: transparent;
+  border-color: var(--second-accent-color);
+}
+
+.outline-btn:hover  {
+  color: var(--black-color);
+  background-color: var(--second-accent-color);
+  border-color: var(--second-accent-color);
+}
+
+.outline-btn:active {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+}
+
+/*--------------------header--------------------*/
+#toTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--accent-color); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.5rem; /* Increase font size */
+}
+
+#toTop:hover {
+  background-color: var(--gray-color); /* Add a dark-grey background on hover */
+}
+.main {
+  background-image: url('../img/section-bg-light.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+/*--------------------hero--------------------*/
 .hero {
+  height: 100vh;
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--white-color);
+}
+
+.card-social__icon path {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 
 .hero-title {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-family: 'miama_nuevamedium';
   font-size: 8rem;
   color: #fff;
 }
 
-.hero__subtitle{
-  margin-bottom: 50px;
+.hero__subtitle {
+  margin-bottom: 60px;
   font-size: 25px;
   font-weight: 700;
-  color: blanchedalmond;
+  color: var(--accent-color);
 }
 
 .hero__text {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 1rem;
 }
 
-.title  {
-  font-family: "Noto Serif Display", serif;
-  color: #8a5142;
-}
+/*--------------------about--------------------*/
 
-.section-title  {
+.about__image  {
   margin-bottom: 30px;
-  font-size: 3rem;
+}
+
+.about-chapter__title {
+  margin-bottom: 5rem;
+}
+
+.team-card  {
+  height: 100%;
+}
+
+.team-card__title {
+  font-size: 1.2rem;
+}
+
+.team-card__subtitle  {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+.team-card__footer  {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-color);
+}
+
+.card-social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card-social__icon path {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+.card-social__link:hover path  {
+  fill: var(--white-color);
+  stroke: var(--white-color);
+}
+
+
+/*--------------------showcase--------------------*/
+.showcase {
 
 }
 
- img {
-   max-width: 100%;
- }
+.tab-pane__item:not(:last-child)  {
+  margin-bottom: 30px;
+}
 
- .bg-black {
-   background-color: #000;
- }
+.nav-pills .nav-link  {
+  background-color: var(--gray-color);
+  border-color: transparent;
+}
 
- .list-reset {
-   margin: 0;
-   padding: 0;
-   list-style: none;
- }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
 
- .btn{
-  text-transform: uppercase;
- }
+.product-card {
+  border: 1px solid var(--gray-color);
+}
 
- .section {
-   padding-top: 90px;
- }
+.product-card__header {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
 
+.product-prise  {
+  font-weight: 600;
+}
 
+.product-card__body {
+  position: relative;
+}
 
+.product-card__body img {
+  width: 100%;
+}
 
- /*.header__btn {
-  color: #fff !important;
- }*/
+.product-card__btn  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
- .about {
-  background-image: url('../img/section-bg-light.jpg');
+.product-card__footer {
+  background-color: var(--black-color);
+}
+
+.product-link {
+  color: var(--white-color);
+}
+
+.product-link:hover {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+/*------Footer-----*/
+.footer {
+  background-image: url(../img/footer-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- }
+}
 
- .about-list__item {
-  color:  #8a5142;
- }
 
- .about-list__item:not(:last-child) {
-  margin-bottom: 25px;
- }
 
- .about-list__text{
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #212529 ;
- }
+.opportunity  {
+  height: 100vh;
+}
 
- @media (max-width: 992px)  {
-  .hero-title{
+@media (max-width: 992px) {
+  .hero-title {
     margin-bottom: 30px;
     font-size: 5rem;
   }
- }
+}
