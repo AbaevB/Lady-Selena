@@ -78,12 +78,32 @@ body {
   font-style: italic;
 }
 
-
+.default-color  {
+  color: var(--accent-color) !important;
+}
 .outline-btn  {
   color: var(--second-accent-color) ;
   background-color: transparent;
   border-color: var(--second-accent-color);
 }
+
+.btn-default  {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: var(--white-color);
+}
+
+.btn-default:hover  {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-default:active {
+  background-color: var(--accent-color);
+  border-color: var(--button-color);
+}
+
+
 
 .outline-btn:hover  {
   color: var(--black-color);
@@ -108,12 +128,28 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .35);
 }
 
 .navbar-dark .navbar-nav .nav-link  {
   color: var(--white-color);
 }
+
+.active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover  {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 
 #toTop {
   display: none; /* Hidden by default */
