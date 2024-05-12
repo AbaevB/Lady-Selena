@@ -9,6 +9,8 @@
   font-style: normal;
 }
 
+
+
 img {
   max-width: 100%;
 }
@@ -76,12 +78,32 @@ body {
   font-style: italic;
 }
 
-
+.default-color  {
+  color: var(--accent-color) !important;
+}
 .outline-btn  {
   color: var(--second-accent-color) ;
   background-color: transparent;
   border-color: var(--second-accent-color);
 }
+
+.btn-default  {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: var(--white-color);
+}
+
+.btn-default:hover  {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-default:active {
+  background-color: var(--accent-color);
+  border-color: var(--button-color);
+}
+
+
 
 .outline-btn:hover  {
   color: var(--black-color);
@@ -95,6 +117,40 @@ body {
 }
 
 /*--------------------header--------------------*/
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .35);
+}
+
+.navbar-dark .navbar-nav .nav-link  {
+  color: var(--white-color);
+}
+
+.active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover  {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
 #toTop {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -125,14 +181,19 @@ body {
 
 /*--------------------hero--------------------*/
 .hero {
-  height: 100vh;
-  padding-top: 120px;
+  position: relative;
+  z-index: 0;
+  padding-top: 200px;
   padding-bottom: 120px;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: var(--white-color);
+}
+
+.hero__content  {
+  height: 100vh;
 }
 
 .card-social__icon path {
@@ -149,15 +210,15 @@ body {
 }
 
 .hero__subtitle {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-size: 25px;
   font-weight: 700;
   color: var(--accent-color);
 }
 
 .hero__text {
-  margin-bottom: 60px;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
 }
 
 /*--------------------about--------------------*/
@@ -172,7 +233,10 @@ body {
 
 .team-card  {
   height: 100%;
+  border: 1px solid var(--accent-color);
 }
+
+
 
 .team-card__title {
   font-size: 1.2rem;
@@ -265,6 +329,22 @@ body {
   color: var(--white-color);
   text-decoration: underline;
 }
+
+.ya_map {
+	font-family: arial;
+	font-size: 12px;
+	color: #454545;
+}
+
+.map  {
+  width: 100%;
+  min-height: 100%;
+}
+
+[class*="ground-pane"]  {
+  filter: grayscale(1);
+}
+
 
 /*------Footer-----*/
 .footer {
