@@ -235,25 +235,25 @@ body {
   margin-bottom: 5rem;
 }
 
-.team-card  {
+.about-card  {
   height: 100%;
   border: 1px solid var(--accent-color);
 }
 
 
 
-.team-card__title {
+.about-card__title {
   font-size: 1.2rem;
 }
 
-.team-card__subtitle  {
+.about-card__subtitle  {
   display: block;
   margin-bottom: 15px;
   font-weight: 500;
   color: var(--black-color);
 }
 
-.team-card__footer  {
+.about-card__footer  {
   display: flex;
   justify-content: center;
   background-color: var(--black-color);
