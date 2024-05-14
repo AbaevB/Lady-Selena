@@ -63,8 +63,9 @@ body {
 }
 
 .section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  min-height: 110vh;
+  /*padding-top: 90px;
+  padding-bottom: 90px;*/
 }
 
 .title {
@@ -235,9 +236,12 @@ body {
   margin-bottom: 5rem;
 }
 
+.card {
+  border: 1px solid var(--accent-color);
+}
+
 .about-card  {
   height: 100%;
-  border: 1px solid var(--accent-color);
 }
 
 
