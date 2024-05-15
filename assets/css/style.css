@@ -61,8 +61,6 @@ body {
 }
 
 .section {
-  min-height: 110vh;
-  padding-top: 90px;
   padding-bottom: 90px;
 }
 
@@ -138,10 +136,7 @@ body {
   color: var(--white-color);
 }
 
-.active {
-  font-weight: 500;
-  text-decoration: underline;
-}
+
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--white-color);
@@ -244,7 +239,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about__element:not(:last-child) {
+.about__element {
   margin-bottom: 5rem;
 }
 
@@ -298,13 +293,13 @@ body {
 }
 
 .nav-pills .nav-link {
-  background-color: var(--gray-color);
+  background-color: var(--accent-color);
   border-color: transparent;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  background-color: var(--black-color);
+  background-color: var(--button-color);
   color: var(--white-color);
 }
 
