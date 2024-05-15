@@ -1,3 +1,18 @@
+// ночная тема
+
+function updateTheme() {
+  const date = new Date();
+  const hour = date.getHours();
+
+  if (hour >= 6 && hour < 20) {
+    document.body.classList.remove('nighttheme');
+  } else {
+    document.body.classList.add('nighttheme');
+  }
+}
+
+updateTheme();
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
