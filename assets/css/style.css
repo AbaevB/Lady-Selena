@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('nightheme.css');
 @font-face {
   font-family: 'miama_nuevamedium';
   src: url('../fonts/miama_nueva-webfont.woff2') format('woff2'),
@@ -46,9 +46,6 @@ a {
   --black-color: #000;
 }
 
-h1, h2, h3, h4, h5, h6  {
-  margin: 0;
-}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -64,8 +61,8 @@ body {
 
 .section {
   min-height: 110vh;
-  /*padding-top: 90px;
-  padding-bottom: 90px;*/
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .title {
@@ -74,7 +71,6 @@ body {
 }
 
 .section__title {
-  font-family: 'miama_nuevamedium';
   margin-bottom: 30px;
   font-size: 3rem;
 }
@@ -232,7 +228,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about-chapter__title {
+.about__element:not(:last-child) {
   margin-bottom: 5rem;
 }
 
