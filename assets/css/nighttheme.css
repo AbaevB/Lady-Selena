@@ -1,0 +1,36 @@
+
+.nighttheme {
+  color: var(--white-color)
+
+}
+
+.nighttheme .main {
+ background-image: url('../img/hero-bg.jpg') !important;
+
+}
+
+.nighttheme .section .container {
+  background-color: var(--black-color);
+}
+
+.nighttheme .card-header  {
+  background-color: var(--black-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.nighttheme .about-card__subtitle {
+  color: var(--white-color);
+}
+
+.nighttheme .card-body  {
+  background-color: var(--black-color);
+}
+
+.nighttheme .card .row {
+  background-color: var(--black-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.nighttheme address {
+  color: var(--white-color) !important ;
+}
