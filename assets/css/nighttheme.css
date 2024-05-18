@@ -34,3 +34,7 @@
 .nighttheme address {
   color: var(--white-color) !important ;
 }
+
+.nighttheme .contact-group__pre {
+  color: #fff;
+}
