@@ -13,7 +13,7 @@
     }
   }
 
-  updateTheme();
+updateTheme();
 
   /////// SCROL TO TOP
   // кнопка появляется при прокрутке вниз

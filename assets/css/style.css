@@ -44,6 +44,7 @@ a {
   --second-gray-color: #dadada;
   --third-gray-color: #f3f0ee;
   --white-color: #fff;
+  --secod-white-color: #f0f8ff;
   --black-color: #000;
 }
 
@@ -251,7 +252,9 @@ body {
   height: 100%;
 }
 
-
+.about-card__header {
+  background-color: var(--second-gray-color);
+}
 
 .about-card__title {
   font-size: 1.2rem;
@@ -262,6 +265,14 @@ body {
   margin-bottom: 15px;
   font-weight: 500;
   color: var(--black-color);
+}
+
+.card-body {
+  background-color: var(--secod-white-color);
+}
+
+.principle-card__body {
+  height: 100%;
 }
 
 .about-card__footer {
