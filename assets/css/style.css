@@ -248,7 +248,8 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.about-card {
+
+.vertical-card  {
   height: 100%;
 }
 
