@@ -23,7 +23,7 @@
 }
 
 .nighttheme .card-body  {
-  background-color: var(--black-color);
+  background-color: var();
 }
 
 .nighttheme .card .row {

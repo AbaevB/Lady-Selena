@@ -372,9 +372,15 @@ body {
   filter: grayscale(1);
 }
 
+/*--------------------Blog--------------------*/
 
+.blog__item  {
+  margin-bottom: 30px;
+}
 
-
+.blog__preview  {
+  width: 100%;
+}
 
 
 /*------Footer-----*/
