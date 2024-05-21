@@ -300,8 +300,17 @@ body {
 /*--------------------showcase--------------------*/
 .showcase {}
 
-.tab-pane__item:not(:last-child) {
+.tab-pane {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.tab-pane__item {
   margin-bottom: 30px;
+}
+
+.tab-pane__btn  {
+  margin: 0 auto;
 }
 
 .nav-pills .nav-link {

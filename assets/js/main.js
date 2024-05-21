@@ -5,12 +5,28 @@
   function updateTheme() {
     const date = new Date();
     const hour = date.getHours();
+    const buttons = document.querySelectorAll('.tab-pane__btn')
 
     if (hour >= 6 && hour < 20) {
       document.body.classList.remove('nighttheme');
+
+      // присвоение соотв. классов кнопкам в табах блока "Витрина товаров"
+      buttons.forEach(function(button){
+        button.classList.remove('btn-light');
+        button.classList.add('btn-dark');
+      //
+      });
     } else {
       document.body.classList.add('nighttheme');
+
+      // присвоение соотв. классов кнопкам в табах блока "Витрина товаров"
+      buttons.forEach(function(button){
+        button.classList.remove('btn-dark');
+        button.classList.add('btn-light');
+      //
+      });
     }
+
   }
 
 updateTheme();
