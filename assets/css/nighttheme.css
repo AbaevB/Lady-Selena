@@ -22,13 +22,26 @@
   color: var(--white-color);
 }
 
+.nighttheme .card {
+  background-color: var(--black-color);
+}
+
+.nighttheme .product-card {
+  border: 1px solid var(--accent-color);
+}
+
 .nighttheme .card-body  {
-  background-color: var();
+  background-color: var(--black-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .nighttheme .card .row {
   background-color: var(--black-color);
   border-bottom: 1px solid var(--accent-color);
+}
+
+.nighttheme .blog-preview__footer {
+  background-color: var(--black-color);
 }
 
 .nighttheme address {
@@ -37,4 +50,14 @@
 
 .nighttheme .contact-group__pre {
   color: #fff;
+}
+
+.nighttheme .form-control {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 1px solid var(--accent-color);
+}
+
+.nighttheme .form-control::placeholder  {
+  color: var(--white-color);
 }
