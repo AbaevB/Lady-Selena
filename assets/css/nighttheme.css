@@ -45,12 +45,10 @@
 }
 
 .nighttheme address {
-  color: var(--white-color) !important ;
+  color: var(--white-color) ;
 }
 
-.nighttheme .contact-group__pre {
-  color: #fff;
-}
+
 
 .nighttheme .form-control {
   background-color: var(--black-color);

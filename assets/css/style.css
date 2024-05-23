@@ -41,7 +41,7 @@ a:hover {
 
 
 :root {
-  --body-color: #3b3937;
+  --body-color: #3b3937;*
   --button-color: #926341;
   --accent-color: #a9845c;
   --second-accent-color: #ffd6a8;
